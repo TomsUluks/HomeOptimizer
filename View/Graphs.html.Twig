@@ -1,0 +1,39 @@
+<!DOCKTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../Style/Navigation.css">
+    <link rel="stylesheet" type="text/css" href="../Style/BudgetBar.css">
+    <link rel="stylesheet" type="text/css" href="../Style/CategorySelect(Graphs).css">
+    <link rel="stylesheet" type="text/css" href="../Style/Table.css">
+    <title>Graphs</title>
+</head>
+<body>
+<ul>
+    <li><a href="MainPage.html.Twig" target="_self">Home</a></li>
+    <li><a href="History.html.Twig">Hystory</a></li>
+    <li><a href="Graphs.html.Twig">Graphs</a></li>
+    <li id="User"><a  href="Users.html.Twig">User</a ></li>
+</ul>
+<form action="">
+    From: <br>
+    <input type="month" name="startmonth"><br>
+    Til:  <br>
+    <input type="month" name="endmonth"><br>
+    <input type="submit" value="Select"><br>
+
+</form>
+<form class="formradio" action="">
+    Pie <input type="radio"  value="Pie Chart"> <br>
+    Bar <input type="radio"  value="Bar Chart"> <br>
+    Line <input type="radio"  value="Line Graph"> <br>
+</form>
+<div class="dropdown">
+    <button class="dropbtn">All</button>
+    <div class="dropdown-content">
+        <a href="#">Heating</a>
+        <a href="#">Electricity</a>
+    </div>
+</div>
+</body>
+</html>

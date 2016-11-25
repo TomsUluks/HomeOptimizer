@@ -1,0 +1,19 @@
+table{
+    position: fixed;
+    left: 20%;
+    top: 30%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+form {
+    position: fixed;
+    top: 30%;
+
+}

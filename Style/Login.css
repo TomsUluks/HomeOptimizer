@@ -1,7 +1,15 @@
 form{
-    text-align-all: center;
-
+    position: fixed;
+    left: 40%;
+    top: 45%;
 }
 h1{
-    color: red;
+    position: fixed;
+    top: 35%;
+    left: 45%;
+
+}
+
+form a {
+    text-align-all: center;
 }

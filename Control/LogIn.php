@@ -10,10 +10,10 @@ $template = $twig ->loadTemplate("MainPage.html.twig");
 
 $id = $_POST['Username'];
 $id = $_POST['Password'];
-$URI = 'http://localhost:25122/' . $id;
+$URI = 'http://homeoptimizer.cloudapp.net/Service1.svc?wsdl';
 $json = file_get_contents($URI);
 
-$book = json_decode($json);
+$data = json_decode($json);
 
 $twigContent = array('data' => $data);
 echo $template->render($twigContent);

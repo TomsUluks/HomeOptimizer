@@ -24,6 +24,24 @@
         <a href="#">Electricity</a>
     </div>
 </div>
+
+<img src="https://pbs.twimg.com/profile_images/1498190440/LOGO2T4.png" alt="Logo" style="width:40px;height:40px;">
+<h1 class="HomeOptimizer">Home Optimizer</h1>
+<tr>
+    <th>Author</th>
+    <th>Id</th>
+    <th>Publisher</th>
+    <th>Title</th>
+</tr>
+
+{% for book in books %}
+    <tr>
+        <td>{{ book.Author }}</td>
+        <td>{{ book.Id }}</td>
+        <td>{{ book.Publisher }}</td>
+        <td>{{ book.Title }}</td>
+    </tr>
+{% endfor %}
 <p id="BudgetLimitTxt" onclick="move()">Budget Limit</p>
 <div id="myProgress">
     <div id="myBar"></div>

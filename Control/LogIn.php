@@ -6,17 +6,25 @@ $loader = new Twig_Loader_Filesystem('../View');
 $twig = new Twig_Environment($loader, array(
     'auto_reload' => true
 ));
-$template = $twig ->loadTemplate("MainPage.html.twig");
+
 
 $id = $_POST['Username'];
-$id = $_POST['Password'];
-$URI = 'http://homeoptimizer.cloudapp.net/Service1.svc?wsdl';
-$json = file_get_contents($URI);
+$p = $_POST['Password'];
+$URI='http://resthomeoptimizer.cloudapp.net/Service1.svc/AccessAccount/?email='.$id.'&password='.$p;
 
-$data = json_decode($json);
+$json=file_get_contents($URI);
+if ($json=="true"){
 
-$twigContent = array('data' => $data);
-echo $template->render($twigContent);
+    $template = $twig ->loadTemplate("MainPage.html.twig");
+    $twigContent = array('data' => $data);
+    echo $template->render($twigContent);
+}
+else {
+
+    echo 'fail';
+}
+
+
 /**
  * Created by PhpStorm.
  * User: tomul

@@ -10,6 +10,11 @@
             top: 25%;
             right: 10%;
         }
+        form{
+            position: fixed;
+            top: 30%;
+            left: 5%;
+        }
     </style>
 </head>
 <body>
@@ -21,6 +26,11 @@
 </ul>
 <img src="https://pbs.twimg.com/profile_images/1498190440/LOGO2T4.png" alt="Logo" style="width:40px;height:40px;">
 <h1 class="HomeOptimizer">Home Optimizer</h1>
+
+<form action="/Control/Limits.php">
+    Limit<input type="number" name="Limit"><br>
+    <input type="submit" value="Save Limit"><br>
+</form>
 
 <a class="needhelp" href="Help.html.Twig" target="_self" >Need help?</a>
 </body>
